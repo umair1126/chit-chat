@@ -25,13 +25,11 @@ app.get("/api", (req, res) => {
 });
 // app.use("/.netlify/function/api", routes);
 
-if (process.env.NODE_ENV == "production") {
-  const path = require("path");
-  app.get("/", (req, res) => {
-    app.use(express.static(path.resolve(__dirname, "client", "build")));
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-  });
-}
+const path = require("path");
+app.use(express.static(path.join(__dirname, "./client/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+});
 
 const { Server } = require("socket.io");
 
