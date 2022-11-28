@@ -1,0 +1,128 @@
+.login-form-layout {
+  display: "flex";
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: radial-gradient(
+      circle at 83% 70%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 72% 5%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 26% 91%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 19% 59%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 18% 99%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 74% 21%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 54% 49%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 14% 83%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 37% 84%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 42% 27%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 67% 82%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    linear-gradient(304deg, rgba(207, 223, 223, 0.85), rgba(3, 35, 171, 0.51));
+}
+
+.login-form-main {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 15px;
+  /* align-items: center; */
+  /* height: 60% !important; */
+}
+
+.login-form-layout-section-1 {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.login-form-layout-section-1 img {
+  height: 500px !important;
+}
+
+.login-form-layout-section {
+  background-color: white;
+  padding: 15px 40px;
+}
+
+@media (max-width: 850px) {
+  .login-form-main {
+    width: 80% !important;
+  }
+  .login-form-layout-section-2 {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .login-form-layout-section-1 {
+    display: none;
+  }
+  .login-form-main {
+    width: auto !important;
+  }
+  .login-form-layout {
+    height: 100%;
+    padding: 20px 0px;
+  }
+}

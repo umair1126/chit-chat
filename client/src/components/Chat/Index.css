@@ -1,0 +1,219 @@
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  height: 100vh;
+  background-image: radial-gradient(
+      circle at 83% 70%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 72% 5%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 8%,
+      transparent 8%,
+      transparent 92%
+    ),
+    radial-gradient(
+      circle at 26% 91%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 19% 59%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 18% 99%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 74% 21%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 54% 49%,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.15) 6%,
+      transparent 6%,
+      transparent 94%
+    ),
+    radial-gradient(
+      circle at 14% 83%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 37% 84%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 42% 27%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    radial-gradient(
+      circle at 67% 82%,
+      rgba(255, 255, 255, 0.17) 0%,
+      rgba(255, 255, 255, 0.17) 4%,
+      transparent 4%,
+      transparent 96%
+    ),
+    linear-gradient(304deg, rgba(103, 146, 54, 0.85), rgba(104, 112, 27, 0.51));
+}
+
+.chat-section-1 {
+  width: 23%;
+  height: 70%;
+  padding: 5px 10px;
+  overflow-y: auto;
+  border-radius: 10px;
+  /* border: 1px solid black; */
+  background-color: white;
+}
+
+.chat-section-1::-webkit-scrollbar {
+  display: none;
+}
+
+.ant-list-item-meta-title {
+  margin-top: 0px;
+}
+
+.ant-list-item {
+  padding-left: 2px !important;
+}
+
+.ant-tabs-nav {
+  /* position: sticky !important; */
+}
+
+.chat-section-2 {
+  height: 71% !important;
+  width: 50%;
+}
+
+.message-section {
+  height: 100%;
+  border-radius: 15px;
+  /* border: 1px solid black; */
+  background-color: white;
+}
+
+.message-section img {
+  height: 50%;
+  width: 50%;
+}
+
+.chat-messages {
+  display: flex;
+  flex-flow: column-reverse;
+  /* justify-content: end; */
+  /* flex-direction: column-reverse; */
+  row-gap: 8px;
+  padding: 10px 5px;
+  height: 333px !important;
+  overflow-y: scroll;
+}
+
+.chat-sender {
+  margin-left: auto;
+  width: auto !important;
+  max-width: 40% !important;
+  word-wrap: break-word;
+  background-color: rgb(109, 109, 201);
+  padding: 10px;
+  color: white;
+  border-radius: 15px 0px 15px 15px;
+}
+
+.chat-receiver {
+  border-radius: 0px 15px 15px 15px;
+  max-width: 40% !important;
+  width: max-content;
+  word-wrap: break-word;
+  padding: 10px;
+  background-color: rgb(226, 226, 226);
+}
+
+.chat-text-time-receiver {
+  font-size: 12px;
+  font-weight: 500;
+  float: right;
+  margin: 10px 0px 0px 20px;
+}
+
+.chat-text-time-sender {
+  float: right;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 10px 0px 0px 20px;
+}
+
+.send-message-input {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.chat-sendMsg {
+  padding: 15px;
+  width: 85%;
+  margin: 5px;
+  border-radius: 33px;
+  outline: none;
+  border: none;
+  background-color: rgb(231, 231, 231);
+}
+
+.sendIcon {
+  background-color: rgb(109, 109, 201);
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  box-shadow: 0 8px 6px -5px rgba(0, 0, 0, 0.4);
+}
+
+.header-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.hedaer-name {
+  font-size: 20px;
+}
+
+.header-status {
+  font-size: 14px;
+}
